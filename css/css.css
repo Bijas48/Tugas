@@ -1,0 +1,92 @@
+header{
+    width: 88%;
+    margin: auto;
+    background-color: rgb(63, 112, 175);
+    color: white;
+    line-height: 120px;
+    padding-left: 2%;
+}
+
+nav{
+    background-color: rgb(63, 112, 175);
+    height: 50px;
+    width: 90%;
+    line-height: 50px;
+    margin: auto;
+    position: relative;
+}
+
+nav ul{
+    list-style: none;
+}
+nav ul li a{
+    float: left;
+    width: 60px;
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* Body */
+#container{
+    width: 90%;
+    margin: auto;
+    min-height: 100px;
+    background: whitesmoke;
+    overflow: hidden;
+}
+
+/* Konten Kiri */
+.kiri{
+    float: left;
+    width: 69%;
+    margin: auto;
+}
+
+.content{
+    border: 2px solid rgb(63, 112, 175);
+    margin-top: 10px;
+    padding: 0pc 2pc 2pc 2pc;
+    
+}
+
+/* Konten Kanan */
+.kanan{
+
+    float: right;
+    width: 29%;
+    margin: auto;
+}
+
+.kanan h2{
+    border-bottom: 3px solid rgb(63, 112, 175);
+    padding-bottom: 3%;
+    
+}
+
+.kanan ul{
+    /* Menggunakan -Left */
+    list-style: none; 
+    margin-left: -12%;
+}
+
+.kanan ul li{
+    padding: 3%;
+}
+
+.kanan ul li a{
+    text-decoration: none;
+}
+/* Footer */
+footer{
+    background-color: rgb(63, 112, 175);
+    margin: auto;
+    width: 87%;
+    line-height: 50px;
+    padding-left: 3%;
+}
+
+footer h2{
+    color:  white;
+}
