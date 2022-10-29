@@ -1,0 +1,204 @@
+:root{
+    --warna_dasar : #fff;
+    --warna_hijau : #069550;
+    --warna_abu : #fafafa;
+    --warna_tepi : #E0E0E0;
+    --warna_placeholder : #2d312f;
+
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(./assets/font/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bold;
+    src: url(./assets/font/Lora-Bold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: Regular;
+    overflow: hidden;
+    
+}
+
+/* Header */
+header{
+    display: block;
+    height: 88px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    padding: 16px 112px 16px 112px;
+}
+
+nav{
+    height: 100%;
+}
+
+/* Nav Kiri */
+nav .kiri{
+    float: left;
+}
+
+nav .kiri img{
+    height: 54px;
+}
+
+/* Nav Kanan */
+nav .kanan{
+    float: right;
+}
+
+nav .kanan li{
+    line-height: 50px;
+    display: inline;
+    margin: 26px;
+}
+
+nav .kanan li a{
+    text-decoration: none;
+    color: var(--warna_hijau);
+}
+
+/* ============================= */
+/* Isi */
+
+.container{
+    height: 91vh;
+}
+
+/* Isi Kiri */
+.container .kiri{
+    display: grid;
+    align-items: center;
+    float: left;
+    background: var(--warna_hijau);
+    width: 50%;
+    height: 100%;
+}
+
+#judul{
+    color: var(--warna_dasar);
+    padding: 2px 12% 0;
+    
+}
+
+#judul h1{
+    font-family: Bold;
+    font-size: 49px;
+    line-height: 79px;
+}
+
+#judul h3{
+    font-size: 21px;
+    line-height: 34px;
+}
+
+
+/* Isi Kanan */
+.container .kanan{
+    float: right;
+    background: var(--warna_abu);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 0 62px;
+
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    position: absolute;
+    width: 560px;
+    height: 449px;
+    padding: 10px;
+    row-gap: 30px;
+}
+
+/* jarak Login tittle pas */
+#login-title{
+    color: var(--warna_hijau);
+}
+
+#login-title h1{
+    font-family: Bold;
+    font-size: 49px;
+    line-height: 79px;
+}
+
+#login-title h3{
+    font-size: 21px;
+    line-height: 34px;
+}
+
+
+.input{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 100%;
+}
+
+.text-label{
+    display: flex;
+    font-family: regular;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+
+
+/* Input kotak */
+input{
+    display: flex;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    border: solid 2px var(--warna_tepi);
+    width: 100%;
+    outline-style: none;
+    transition: all ease-in-out 175ms;
+
+}
+
+input:focus{
+    background-color:var(--warna_dasar);
+    border: solid 2px var(--warna_hijau);
+
+}
+
+::placeholder{
+    color: var(--warna_placeholder);
+
+}
+
+/* Button */
+.button{
+    display: flex;
+    justify-content: center;
+    background-color: var(--warna_hijau);
+    padding: 14px;
+    font-family: Bold;
+    color: var(--warna_dasar);
+    border-radius: 8px;
+    width: 100%;
+    transition: all ease-in-out 175ms;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #0a7a44;
+}
